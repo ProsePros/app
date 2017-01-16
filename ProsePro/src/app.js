@@ -1,15 +1,17 @@
- import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch } from 'react-axios'
- import React from 'react';
- import ReactDOM from 'react-dom';
- import { IndexRoute, Route, browserHistory} from 'react-router';
- import ReactStormpath, { Router, HomeRoute, LoginRoute, AuthenticatedRoute } from 'react-stormpath';
+import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch } from 'react-axios'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { IndexRoute, Route, browserHistory} from 'react-router';
+import ReactStormpath, { Router, HomeRoute, LoginRoute, AuthenticatedRoute } from 'react-stormpath';
 
- ReactStormpath.init();
+ReactStormpath.init();
 
- ReactDOM.render(
+ReactDOM.render(
     <Router history={browserHistory}>
-      <Route path='/' component={MasterPage}>
-      </Route>
+        <Route path='/' component={MasterPage}>
+            <IndexRoute component={IndexPage /}>
+            <LoginRoute path='/login' component={LoginPage} />
+        </Route>
     </Router>,
     document.getElementById('app-container')
- );
+);
