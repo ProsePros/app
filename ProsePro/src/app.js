@@ -1,8 +1,8 @@
- import { MasterPage } from './pages';
+ import { MasterPage } from './pages/MasterPage';
  import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch } from 'react-axios'
  import React from 'react';
  import ReactDOM from 'react-dom';
- import { IndexRoute, Route, browserHistory} from 'react-router';
+ import { Router, IndexRoute, Route, browserHistory} from 'react-router';
 
  class App extends React.Component {
    constructor(props) {

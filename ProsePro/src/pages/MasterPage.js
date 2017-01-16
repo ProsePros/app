@@ -7,7 +7,7 @@ import DocumentTitle from 'react-document-title';
 
 import Header from './Header';
 
-export default class is extends React.Component{
+export default class MasterPage extends React.Component{
   render(){
     return (
       <DocumentTitle title='ProProse'>
