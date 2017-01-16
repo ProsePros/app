@@ -10,7 +10,7 @@ ReactStormpath.init();
 ReactDOM.render(
     <Router history={browserHistory}>
         <HomeRoute path='/' component={MasterPage}>
-            <IndexRoute component={IndexPage /}>
+            <IndexRoute component={IndexPage} />
             <LoginRoute path='/login' component={LoginPage} />
             <Route path='/register' component={RegistrationPage} />
             <AuthenticatedRoute>
