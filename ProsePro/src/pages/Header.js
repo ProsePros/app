@@ -3,6 +3,8 @@
  */
 import React from 'react';
 import { Link } from 'react-router';
+import { LoginLink, LogoutLink, Authenticated, NotAuthenticated } from 'react-stormpath';
+
 
 export default class Header extends React.Component {
   render() {
@@ -11,9 +13,11 @@ export default class Header extends React.Component {
         <div className='container'>
           <div id="navbar-collapse" className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
-              {/*<li><Link to="'/">Homebase</Link></li>*/}
+              <li><Link to="'/">Homebase</Link></li>
               <li><Link to="/profile">Profile</Link></li>
               <li><Link to="/register">Create Account</Link></li>
+            </ul>
+            <ul className="nav navbar-nav navbar-right">
             </ul>
           </div>
         </div>
