@@ -19,6 +19,7 @@ export default class ProfilePage extends React.Component{
                 </div>
                 <div className="row">
                     <div className="col-xs-12">
+                        <UserProfileForm />
                     </div>
                 </div>
             </div>
