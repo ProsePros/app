@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Sentence revision and submission - mobile first SERN application",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProsePros/app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProsePros/app/issues"
+  },
+  "homepage": "https://github.com/ProsePros/app#readme",
+  "dependencies": {
+    "mysql": "^2.12.0"
+  }
+}
