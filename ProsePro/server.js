@@ -9,6 +9,8 @@ var react = require('react');
 var stormpath = require('express-stormpath')
 var app = express();
 
+app.use(express.static(__dirname + 'build/index.html'));
+
 var compiler = webpack(config);
 app.use(require('webpack-dev-middleware')(compiler,{
   noInfo:true,
@@ -18,10 +20,10 @@ app.use(require('webpack-dev-middleware')(compiler,{
 app.get('/css/bootstrap.min.css', function (req,res){
   res.sendFile(path.join(__dirname, 'build/css/bootstrap.min.css'));
 });
-
-app.get('*', function(req, res){
-  res.sendFile(path.join(__dirname, 'build/index.html'));
-});
+//
+// app.get('*', function(req, res){
+//   res.sendFile(path.join(__dirname, 'build/index.html'));
+// });
 
 app.use(stormpath.init(app, {
     web: {
