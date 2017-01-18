@@ -28,7 +28,7 @@ app.listen(PORT, function(){
 
 
 // Serve static files
-app.use(express.static(__dirname + './public'));
+app.use(express.static(__dirname + 'public/build'));
 
 
 
@@ -77,19 +77,19 @@ app.get('/all', function(req, res){
 // });
 
 app.get('/', function(req,res) {
-	res.sendFile(path.join(__dirname, './public/build/index.html'));
+	res.sendFile(path.resolve(__dirname, 'public/build/index.html'));
 });
 
-app.get('/css/:name', function(req, res) {
-		var fileName = req.params.name;
-		var options = {
-			root: __dirname + './../public/css/',
-			dotfiles: 'deny',
-			headers: {
-			    'x-timestamp': Date.now(),
-			    'x-sent': true
-			}
-		};
+// app.get('/css/:name', function(req, res) {
+// 		var fileName = req.params.name;
+// 		var options = {
+// 			root: __dirname + './../public/css/',
+// 			dotfiles: 'deny',
+// 			headers: {
+// 			    'x-timestamp': Date.now(),
+// 			    'x-sent': true
+// 			}
+// 		};
 
 app.post('/addsentence/', function(req, res){
 	var userinput = req.params.body;
@@ -117,8 +117,6 @@ app.get('/randomsentence', function(req, res){
 			res.json(found[random]);
 		}
 	});
-
-
 });
 
     
