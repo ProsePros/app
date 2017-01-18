@@ -1,0 +1,46 @@
+{
+  "name": "groupsapp",
+  "version": "1.0.0",
+  "description": "app for group organizing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksm/groupsapp.git"
+  },
+  "author": "Al Min, Wil Cook, and Philip Graham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksm/groupsapp/issues"
+  },
+  "homepage": "https://github.com/aksm/groupsapp#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.2",
+    "google-auth-library": "^0.9.10",
+    "googleapis": "^14.2.0",
+    "materialize-css": "^0.97.8",
+    "method-override": "^2.3.7",
+    "moment": "^2.17.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.12.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth2": "^0.1.6",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "sequelize": "^3.27.0",
+    "session-memory-store": "^0.2.2",
+    "shortid": "^2.2.6",
+  },
+  "devDependencies": {},
+  "keywords": []
+}
